@@ -24,9 +24,8 @@ add.onclick = function (e) {
     for (let i = 0; i < tasks.children.length; i++) {
       if (localStorage.keep == "undefined") {
         localStorage.keep = tasks.children[i].outerHTML;
-      } else if (localStorage.keep == "undefined") {
-        localStorage.keep = localStorage.keep;
-      } else {
+      }
+      else {
         localStorage.keep = localStorage.keep + tasks.children[i].outerHTML;
       }
     }
@@ -42,9 +41,8 @@ setInterval(function () {
       for (let i = 0; i < tasks.children.length; i++) {
         if (localStorage.keep == "undefined") {
           localStorage.keep = tasks.children[i].outerHTML;
-        } else if (localStorage.keep == "undefined") {
-          localStorage.keep = localStorage.keep;
-        } else {
+        }
+        else {
           localStorage.keep = localStorage.keep + tasks.children[i].outerHTML;
         }
       }
