@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #e2fdff;
+}
+form {
+  width: 800px;
+  margin: 0 auto;
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+  background-color: #5465ff;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+form input {
+  padding: 15px 10px;
+  width: 70%;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  caret-color: #5465ff;
+  font-size: 20px;
+}
+form input:focus {
+  outline: none;
+}
+form .add {
+  width: 30%;
+  background-color: #e2fdff;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: #0800ff;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+form .add:hover::before {
+  transform: scale(1000);
+  -webkit-transform: scale(1000);
+  -moz-transform: scale(1000);
+  -ms-transform: scale(1000);
+  -o-transform: scale(1000);
+}
+form .add::before {
+  content: "";
+  transition-duration: 0.3s;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  background-color: rgb(175 175 175 / 27%);
+  z-index: 5;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.tasks {
+  width: 800px;
+  min-height: 50px;
+  background-color: #5465ff;
+  margin: 20px auto;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  padding: 15px;
+}
+.task {
+  background-color: #ff9800;
+  padding: 20px 50px 20px 15px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 10px;
+}
+p {
+  position: relative;
+  word-wrap: break-word;
+}
+.remove {
+  position: absolute;
+  display: flex;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: red;
+  color: white;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
